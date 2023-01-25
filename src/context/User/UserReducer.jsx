@@ -9,5 +9,14 @@ export default (state, action) => {
         ...state,
         users: payload
       }
+
+    case GET_PROFILE:
+      return {
+        ...state,
+        selectedUser: payload
+      }
+
+    default:
+      return state
   }
 }

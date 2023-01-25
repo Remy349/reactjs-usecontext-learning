@@ -6,8 +6,16 @@ import UserState from './context/User/UserState'
 function App () {
   return (
     <UserState>
-      <UserList />
-      <Profile />
+      <div className='container p-4'>
+        <div className='row'>
+          <div className='col-md-8'>
+            <UserList />
+          </div>
+          <div className='col-md-4'>
+            <Profile />
+          </div>
+        </div>
+      </div>
     </UserState>
   )
 }
